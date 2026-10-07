@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// 1. Component Display hiển thị kết quả
+
 function Display({ expression }) {
   return (
     <div style={{
@@ -21,7 +21,7 @@ function Display({ expression }) {
   );
 }
 
-// 2. Component Button nhận props: label (nhãn), color (màu), onClick
+
 function Button({ label, color = '#43a047', onClick }) {
   return (
     <button
@@ -45,7 +45,7 @@ function Button({ label, color = '#43a047', onClick }) {
   );
 }
 
-// 3. Component App chính quản lý State lưu biểu thức
+
 export default function App() {
   const [expression, setExpression] = useState('');
   const btnColor = '#43a047';
